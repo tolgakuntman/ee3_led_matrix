@@ -1,0 +1,1791 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"82 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[e E17133 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"88
+[e E17156 . `uc
+TMR2_T2CKIPPS_PIN 0
+TMR2_TMR4_POSTSCALED 2
+TMR2_TMR6_POSTSCALED 3
+TMR2_CCP1OUT 4
+TMR2_CCP2OUT 5
+TMR2_CCP3OUT 6
+TMR2_PWM1_OUT1 7
+TMR2_PWM1_OUT2 8
+TMR2_PWM2_OUT1 9
+TMR2_PWM2_OUT2 10
+TMR2_PWM3_OUT1 11
+TMR2_PWM3_OUT2 12
+TMR2_CMP1OUT 15
+TMR2_CMP2OUT 16
+TMR2_ZCDOUT 17
+TMR2_CLC1_OUT 18
+TMR2_CLC2_OUT 19
+TMR2_CLC3_OUT 20
+TMR2_CLC4_OUT 21
+TMR2_CLC5_OUT 22
+TMR2_CLC6_OUT 23
+TMR2_CLC7_OUT 24
+TMR2_CLC8_OUT 25
+TMR2_UART1_RX_EDGE 26
+TMR2_UART1_TX_EDGE 27
+TMR2_UART2_RX_EDGE 28
+TMR2_UART2_TX_EDGE 29
+TMR2_UART3_RX_EDGE 30
+TMR2_UART3_TX_EDGE 31
+TMR2_UART4_RX_EDGE 32
+TMR2_UART4_TX_EDGE 33
+TMR2_UART5_RX_EDGE 34
+TMR2_UART5_TX_EDGE 35
+]
+"82 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[e E17133 . `uc
+TMR4_ROP_STARTS_TMRON 0
+TMR4_ROP_STARTS_TMRON_ERSHIGH 1
+TMR4_ROP_STARTS_TMRON_ERSLOW 2
+TMR4_ROP_RESETS_ERSBOTHEDGE 3
+TMR4_ROP_RESETS_ERSRISINGEDGE 4
+TMR4_ROP_RESETS_ERSFALLINGEDGE 5
+TMR4_ROP_RESETS_ERSLOW 6
+TMR4_ROP_RESETS_ERSHIGH 7
+TMR4_OS_STARTS_TMRON 8
+TMR4_OS_STARTS_ERSRISINGEDGE 9
+TMR4_OS_STARTS_ERSFALLINGEDGE 10
+TMR4_OS_STARTS_ERSBOTHEDGE 11
+TMR4_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR4_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR4_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR4_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR4_OS_STARTS_TMRON_ERSHIGH 22
+TMR4_OS_STARTS_TMRON_ERSLOW 23
+TMR4_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR4_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR4_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"88
+[e E17156 . `uc
+TMR4_T4CKIPPS_PIN 0
+TMR4_TMR2_POSTSCALED 1
+TMR4_TMR6_POSTSCALED 3
+TMR4_CCP1OUT 4
+TMR4_CCP2OUT 5
+TMR4_CCP3OUT 6
+TMR4_PWM1_OUT1 7
+TMR4_PWM1_OUT2 8
+TMR4_PWM2_OUT1 9
+TMR4_PWM2_OUT2 10
+TMR4_PWM3_OUT1 11
+TMR4_PWM3_OUT2 12
+TMR4_CMP1OUT 15
+TMR4_CMP2OUT 16
+TMR4_ZCDOUT 17
+TMR4_CLC1_OUT 18
+TMR4_CLC2_OUT 19
+TMR4_CLC3_OUT 20
+TMR4_CLC4_OUT 21
+TMR4_CLC5_OUT 22
+TMR4_CLC6_OUT 23
+TMR4_CLC7_OUT 24
+TMR4_CLC8_OUT 25
+TMR4_UART1_RX_EDGE 26
+TMR4_UART1_TX_EDGE 27
+TMR4_UART2_RX_EDGE 28
+TMR4_UART2_TX_EDGE 29
+TMR4_UART3_RX_EDGE 30
+TMR4_UART3_TX_EDGE 31
+TMR4_UART4_RX_EDGE 32
+TMR4_UART4_TX_EDGE 33
+TMR4_UART5_RX_EDGE 34
+TMR4_UART5_TX_EDGE 35
+]
+"438 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mirf.c
+[e E17636 . `uc
+RF24_1MBPS 0
+RF24_2MBPS 1
+RF24_250KBPS 2
+]
+"464
+[e E17641 . `uc
+RF24_CRC_DISABLED 0
+RF24_CRC_8 1
+RF24_CRC_16 2
+]
+"7 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"3 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/memset.c
+[v _memset memset `(*.39v  1 e 3 0 ]
+"5 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"15 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"11 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_matrix.c
+[v _getRowData getRowData `(us  1 e 2 0 ]
+"15
+[v _updateLedMatrices updateLedMatrices `(v  1 e 1 0 ]
+"22
+[v _initLEDMatrixBlue initLEDMatrixBlue `(v  1 e 1 0 ]
+"33
+[v _setLEDToRed setLEDToRed `(v  1 e 1 0 ]
+"40
+[v _setLEDToGreen setLEDToGreen `(v  1 e 1 0 ]
+"55
+[v _getRowData_Matrix2 getRowData_Matrix2 `(us  1 e 2 0 ]
+"59
+[v _initLEDMatrixBlue_Matrix2 initLEDMatrixBlue_Matrix2 `(v  1 e 1 0 ]
+"70
+[v _setLEDToRed_Matrix2 setLEDToRed_Matrix2 `(v  1 e 1 0 ]
+"77
+[v _setLEDToGreen_Matrix2 setLEDToGreen_Matrix2 `(v  1 e 1 0 ]
+"19 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_shift.c
+[v _LEDMatrix_RowController_TimerISR LEDMatrix_RowController_TimerISR `(v  1 e 1 0 ]
+"33
+[v _LEDMatrix_TimerISR LEDMatrix_TimerISR `(v  1 e 1 0 ]
+"116
+[v _SetRow_Matrix1 SetRow_Matrix1 `(v  1 e 1 0 ]
+"200
+[v _SetRow_Matrix2 SetRow_Matrix2 `(v  1 e 1 0 ]
+"71 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/main.c
+[v _nrf_irq nrf_irq `(v  1 e 1 0 ]
+"76
+[v _AdvancedSettings AdvancedSettings `(v  1 e 1 0 ]
+"94
+[v _slave slave `(v  1 e 1 0 ]
+"238
+[v _main main `(v  1 e 1 0 ]
+"69 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/spi/src/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+"86
+[v _SPI1_Deinitialize SPI1_Deinitialize `(v  1 e 1 0 ]
+"91
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+"112
+[v _SPI1_Close SPI1_Close `(v  1 e 1 0 ]
+"120
+[v _SPI1_BufferExchange SPI1_BufferExchange `(v  1 e 1 0 ]
+"151
+[v _SPI1_BufferWrite SPI1_BufferWrite `(v  1 e 1 0 ]
+"180
+[v _SPI1_BufferRead SPI1_BufferRead `(v  1 e 1 0 ]
+"209
+[v _SPI1_ByteExchange SPI1_ByteExchange `(uc  1 e 1 0 ]
+"232
+[v _SPI1_ByteWrite SPI1_ByteWrite `(v  1 e 1 0 ]
+"244
+[v _SPI1_ByteRead SPI1_ByteRead `(uc  1 e 1 0 ]
+"257
+[v _SPI1_IsTxReady SPI1_IsTxReady `(a  1 e 1 0 ]
+"271
+[v _SPI1_IsRxReady SPI1_IsRxReady `(a  1 e 1 0 ]
+"39 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"42 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"80
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"122
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+"131
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+"135
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"148
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+"157
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+"161
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"174
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+"183
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+"187
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"39 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"148
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"160
+[v _nRF24_IRQ_ISR nRF24_IRQ_ISR `(v  1 e 1 0 ]
+"175
+[v _nRF24_IRQ_SetInterruptHandler nRF24_IRQ_SetInterruptHandler `(v  1 e 1 0 ]
+"182
+[v _nRF24_IRQ_DefaultInterruptHandler nRF24_IRQ_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"37 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+"43
+[v _DELAY_microseconds DELAY_microseconds `(v  1 e 1 0 ]
+"46 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"79
+[v _TMR0_Start TMR0_Start `(v  1 e 1 0 ]
+"84
+[v _TMR0_Stop TMR0_Stop `(v  1 e 1 0 ]
+"139
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"156
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
+"59 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"92
+[v _TMR1_Start TMR1_Start `(v  1 e 1 0 ]
+"98
+[v _TMR1_Stop TMR1_Stop `(v  1 e 1 0 ]
+"118
+[v _TMR1_Write TMR1_Write `(v  1 e 1 0 ]
+"145
+[v _TMR1_PeriodCountSet TMR1_PeriodCountSet `(v  1 e 1 0 ]
+"160
+[v _TMR1_OverflowISR TMR1_OverflowISR `(v  1 e 1 0 ]
+"175
+[v _TMR1_OverflowCallbackRegister TMR1_OverflowCallbackRegister `(v  1 e 1 0 ]
+"180
+[v _TMR1_DefaultOverflowCallback TMR1_DefaultOverflowCallback `(v  1 s 1 TMR1_DefaultOverflowCallback ]
+"201
+[v _TMR1_GateCallbackRegister TMR1_GateCallbackRegister `(v  1 e 1 0 ]
+"206
+[v _TMR1_DefaultGateCallback TMR1_DefaultGateCallback `(v  1 s 1 TMR1_DefaultGateCallback ]
+"57 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"94
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"100
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+[v i2_TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"119
+[v _TMR2_PeriodCountSet TMR2_PeriodCountSet `(v  1 e 1 0 ]
+"124
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"134
+[v _TMR2_OverflowCallbackRegister TMR2_OverflowCallbackRegister `(v  1 e 1 0 ]
+"139
+[v _TMR2_DefaultOverflowCallback TMR2_DefaultOverflowCallback `(v  1 s 1 TMR2_DefaultOverflowCallback ]
+"59 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"92
+[v _TMR3_Start TMR3_Start `(v  1 e 1 0 ]
+"98
+[v _TMR3_Stop TMR3_Stop `(v  1 e 1 0 ]
+"118
+[v _TMR3_Write TMR3_Write `(v  1 e 1 0 ]
+"145
+[v _TMR3_PeriodCountSet TMR3_PeriodCountSet `(v  1 e 1 0 ]
+"160
+[v _TMR3_OverflowISR TMR3_OverflowISR `(v  1 e 1 0 ]
+"175
+[v _TMR3_OverflowCallbackRegister TMR3_OverflowCallbackRegister `(v  1 e 1 0 ]
+"180
+[v _TMR3_DefaultOverflowCallback TMR3_DefaultOverflowCallback `(v  1 s 1 TMR3_DefaultOverflowCallback ]
+"201
+[v _TMR3_GateCallbackRegister TMR3_GateCallbackRegister `(v  1 e 1 0 ]
+"206
+[v _TMR3_DefaultGateCallback TMR3_DefaultGateCallback `(v  1 s 1 TMR3_DefaultGateCallback ]
+"57 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+"94
+[v _TMR4_Start TMR4_Start `(v  1 e 1 0 ]
+[v i2_TMR4_Start TMR4_Start `(v  1 e 1 0 ]
+"100
+[v _TMR4_Stop TMR4_Stop `(v  1 e 1 0 ]
+"119
+[v _TMR4_PeriodCountSet TMR4_PeriodCountSet `(v  1 e 1 0 ]
+"124
+[v _TMR4_ISR TMR4_ISR `(v  1 e 1 0 ]
+"135
+[v _TMR4_OverflowCallbackRegister TMR4_OverflowCallbackRegister `(v  1 e 1 0 ]
+"140
+[v _TMR4_DefaultOverflowCallback TMR4_DefaultOverflowCallback `(v  1 s 1 TMR4_DefaultOverflowCallback ]
+"44 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mirf.c
+[v _SPI_read_buff SPI_read_buff `(v  1 e 1 0 ]
+"54
+[v _SPI_write_buff SPI_write_buff `(v  1 e 1 0 ]
+"70
+[v _Nrf24_init Nrf24_init `(v  1 e 1 0 ]
+"89
+[v _Nrf24_config Nrf24_config `(v  1 e 1 0 ]
+"104
+[v _Nrf24_setRADDR Nrf24_setRADDR `(i  1 e 2 0 ]
+"117
+[v _Nrf24_setTADDR Nrf24_setTADDR `(i  1 e 2 0 ]
+"160
+[v _Nrf24_dataReady Nrf24_dataReady `(a  1 e 1 0 ]
+"182
+[v _Nrf24_getData Nrf24_getData `(v  1 e 1 0 ]
+"200
+[v _Nrf24_configRegister Nrf24_configRegister `(v  1 e 1 0 ]
+"209
+[v _Nrf24_readRegister Nrf24_readRegister `(v  1 e 1 0 ]
+"220
+[v _Nrf24_writeRegister Nrf24_writeRegister `(v  1 e 1 0 ]
+"299
+[v _Nrf24_getStatus Nrf24_getStatus `(uc  1 e 1 0 ]
+"305
+[v _Nrf24_powerUpRx Nrf24_powerUpRx `(v  1 e 1 0 ]
+"313
+[v _Nrf24_flushRx Nrf24_flushRx `(v  1 e 1 0 ]
+"320
+[v _Nrf24_powerUpTx Nrf24_powerUpTx `(v  1 e 1 0 ]
+"345
+[v _Nrf24_SetSpeedDataRates Nrf24_SetSpeedDataRates `(v  1 e 1 0 ]
+"366
+[v _Nrf24_setRetransmitDelay Nrf24_setRetransmitDelay `(v  1 e 1 0 ]
+"403
+[v _Nrf24_print_status Nrf24_print_status `(v  1 e 1 0 ]
+"409
+[v _Nrf24_print_address_register Nrf24_print_address_register `(v  1 e 1 0 ]
+"425
+[v _Nrf24_print_byte_register Nrf24_print_byte_register `(v  1 e 1 0 ]
+"436
+[v _Nrf24_getDataRate Nrf24_getDataRate `(uc  1 e 1 0 ]
+"462
+[v _Nrf24_getCRCLength Nrf24_getCRCLength `(uc  1 e 1 0 ]
+"483
+[v _Nrf24_getPALevel Nrf24_getPALevel `(uc  1 e 1 0 ]
+"496
+[v _Nrf24_getRetransmitDelay Nrf24_getRetransmitDelay `(uc  1 e 1 0 ]
+"3338 /Users/tolgakuntman/.mchp_packs/Microchip/PIC18F-Q_DFP/1.25.433/xc8/pic/include/proc/pic18f57q43.h
+[v _SPI1RXB SPI1RXB `VEuc  1 e 1 @128 ]
+"3408
+[v _SPI1TXB SPI1TXB `VEuc  1 e 1 @129 ]
+"3485
+[v _SPI1TCNTL SPI1TCNTL `VEuc  1 e 1 @130 ]
+"3505
+[v _SPI1TCNTH SPI1TCNTH `VEuc  1 e 1 @131 ]
+"3525
+[v _SPI1CON0 SPI1CON0 `VEuc  1 e 1 @132 ]
+[s S223 . 1 `uc 1 BMODE 1 0 :1:0 
+`uc 1 MST 1 0 :1:1 
+`uc 1 LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"3546
+[s S229 . 1 `uc 1 SPI1BMODE 1 0 :1:0 
+`uc 1 SPI1MST 1 0 :1:1 
+`uc 1 SPI1LSBF 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 SPI1SPIEN 1 0 :1:7 
+]
+[u S235 . 1 `S223 1 . 1 0 `S229 1 . 1 0 ]
+[v _SPI1CON0bits SPI1CON0bits `VES235  1 e 1 @132 ]
+"3591
+[v _SPI1CON1 SPI1CON1 `VEuc  1 e 1 @133 ]
+"3693
+[v _SPI1CON2 SPI1CON2 `VEuc  1 e 1 @134 ]
+[s S183 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 CLRBF 1 0 :1:2 
+`uc 1 RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 TXWE 1 0 :1:7 
+]
+"3798
+[s S192 . 1 `uc 1 SPI1RXBF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 SPI1CLRBF 1 0 :1:2 
+`uc 1 SPI1RXRE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SPI1TXBE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 SPI1TXWE 1 0 :1:7 
+]
+[u S201 . 1 `S183 1 . 1 0 `S192 1 . 1 0 ]
+[v _SPI1STATUSbits SPI1STATUSbits `VES201  1 e 1 @135 ]
+"3893
+[v _SPI1BAUD SPI1BAUD `VEuc  1 e 1 @137 ]
+[s S272 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TXUIF 1 0 :1:1 
+`uc 1 RXOIF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 EOSIF 1 0 :1:4 
+`uc 1 SOSIF 1 0 :1:5 
+`uc 1 TCZIF 1 0 :1:6 
+`uc 1 SRMTIF 1 0 :1:7 
+]
+"3990
+[s S281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SPI1TXUIF 1 0 :1:1 
+`uc 1 SPI1RXOIF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SPI1EOSIF 1 0 :1:4 
+`uc 1 SPI1SOSIF 1 0 :1:5 
+`uc 1 SPI1TCZIF 1 0 :1:6 
+`uc 1 SPI1SRMTIF 1 0 :1:7 
+]
+[u S290 . 1 `S272 1 . 1 0 `S281 1 . 1 0 ]
+[v _SPI1INTFbits SPI1INTFbits `VES290  1 e 1 @138 ]
+"4147
+[v _SPI1CLK SPI1CLK `VEuc  1 e 1 @140 ]
+"5140
+[v _ACTCON ACTCON `VEuc  1 e 1 @172 ]
+"5210
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5350
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5390
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5448
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5650
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"9708
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @532 ]
+"9764
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @533 ]
+"14250
+[v _SPI1SCKPPS SPI1SCKPPS `VEuc  1 e 1 @618 ]
+"14316
+[v _SPI1SDIPPS SPI1SDIPPS `VEuc  1 e 1 @619 ]
+"15474
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @646 ]
+"15606
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @647 ]
+"15738
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @648 ]
+"15870
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @649 ]
+"23298
+[v _TMR0L TMR0L `VEuc  1 e 1 @792 ]
+"23436
+[v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
+"23690
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @794 ]
+[s S1058 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"23724
+[s S1064 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S1070 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[s S1076 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+[u S1081 . 1 `S1058 1 . 1 0 `S1064 1 . 1 0 `S1070 1 . 1 0 `S1076 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES1081  1 e 1 @794 ]
+"23814
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @795 ]
+"23963
+[v _TMR1L TMR1L `VEuc  1 e 1 @796 ]
+"24083
+[v _TMR1H TMR1H `VEuc  1 e 1 @797 ]
+"24203
+[v _T1CON T1CON `VEuc  1 e 1 @798 ]
+[s S1517 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 NOT_SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"24245
+[s S1523 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S1530 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S1536 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[s S1539 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nT1SYNC 1 0 :1:2 
+]
+[u S1542 . 1 `S1517 1 . 1 0 `S1523 1 . 1 0 `S1530 1 . 1 0 `S1536 1 . 1 0 `S1539 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1542  1 e 1 @798 ]
+"24425
+[v _T1GCON T1GCON `VEuc  1 e 1 @799 ]
+[s S1618 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GVAL 1 0 :1:2 
+`uc 1 GGO 1 0 :1:3 
+`uc 1 GSPM 1 0 :1:4 
+`uc 1 GTM 1 0 :1:5 
+`uc 1 GPOL 1 0 :1:6 
+`uc 1 GE 1 0 :1:7 
+]
+"24479
+[s S1626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 T1GE 1 0 :1:7 
+]
+[s S1634 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_DONE 1 0 :1:3 
+]
+[s S1637 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+[s S1640 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 GGO_NOT_DONE 1 0 :1:3 
+]
+[s S1643 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 GGO_nDONE 1 0 :1:3 
+]
+[s S1646 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_NOT_DONE 1 0 :1:3 
+]
+[s S1649 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+]
+[u S1652 . 1 `S1618 1 . 1 0 `S1626 1 . 1 0 `S1634 1 . 1 0 `S1637 1 . 1 0 `S1640 1 . 1 0 `S1643 1 . 1 0 `S1646 1 . 1 0 `S1649 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES1652  1 e 1 @799 ]
+"24711
+[v _T1GATE T1GATE `VEuc  1 e 1 @800 ]
+"24901
+[v _T1CLK T1CLK `VEuc  1 e 1 @801 ]
+"25147
+[v _T2TMR T2TMR `VEuc  1 e 1 @802 ]
+"25152
+[v _TMR2 TMR2 `VEuc  1 e 1 @802 ]
+"25185
+[v _T2PR T2PR `VEuc  1 e 1 @803 ]
+"25190
+[v _PR2 PR2 `VEuc  1 e 1 @803 ]
+"25223
+[v _T2CON T2CON `VEuc  1 e 1 @804 ]
+[s S1372 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"25259
+[s S1376 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S1380 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S1388 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S1397 . 1 `S1372 1 . 1 0 `S1376 1 . 1 0 `S1380 1 . 1 0 `S1388 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1397  1 e 1 @804 ]
+"25369
+[v _T2HLT T2HLT `VEuc  1 e 1 @805 ]
+[s S1242 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"25402
+[s S1247 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S1253 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S1258 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S1264 . 1 `S1242 1 . 1 0 `S1247 1 . 1 0 `S1253 1 . 1 0 `S1258 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES1264  1 e 1 @805 ]
+"25497
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @806 ]
+"25703
+[v _T2RST T2RST `VEuc  1 e 1 @807 ]
+[s S1326 . 1 `uc 1 RSEL 1 0 :8:0 
+]
+"25734
+[s S1328 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+`uc 1 RSEL4 1 0 :1:4 
+`uc 1 RSEL5 1 0 :1:5 
+`uc 1 RSEL6 1 0 :1:6 
+]
+[s S1336 . 1 `uc 1 T2RSEL 1 0 :8:0 
+]
+[s S1338 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+`uc 1 T2RSEL4 1 0 :1:4 
+`uc 1 T2RSEL5 1 0 :1:5 
+`uc 1 T2RSEL6 1 0 :1:6 
+]
+[u S1346 . 1 `S1326 1 . 1 0 `S1328 1 . 1 0 `S1336 1 . 1 0 `S1338 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES1346  1 e 1 @807 ]
+"25826
+[v _TMR3L TMR3L `VEuc  1 e 1 @808 ]
+"25946
+[v _TMR3H TMR3H `VEuc  1 e 1 @809 ]
+"26066
+[v _T3CON T3CON `VEuc  1 e 1 @810 ]
+"26108
+[s S2146 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 T3RD16 1 0 :1:1 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+]
+[s S2159 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD163 1 0 :1:1 
+]
+[s S2162 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nT3SYNC 1 0 :1:2 
+]
+[u S2165 . 1 `S1517 1 . 1 0 `S2146 1 . 1 0 `S1530 1 . 1 0 `S2159 1 . 1 0 `S2162 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES2165  1 e 1 @810 ]
+"26288
+[v _T3GCON T3GCON `VEuc  1 e 1 @811 ]
+"26342
+[s S2249 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T3GVAL 1 0 :1:2 
+`uc 1 T3GGO 1 0 :1:3 
+`uc 1 T3GSPM 1 0 :1:4 
+`uc 1 T3GTM 1 0 :1:5 
+`uc 1 T3GPOL 1 0 :1:6 
+`uc 1 T3GE 1 0 :1:7 
+]
+[s S2260 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T3DONE 1 0 :1:3 
+]
+[s S2269 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO_NOT_DONE 1 0 :1:3 
+]
+[s S2272 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO_nDONE 1 0 :1:3 
+]
+[u S2275 . 1 `S1618 1 . 1 0 `S2249 1 . 1 0 `S1634 1 . 1 0 `S2260 1 . 1 0 `S1640 1 . 1 0 `S1643 1 . 1 0 `S2269 1 . 1 0 `S2272 1 . 1 0 ]
+[v _T3GCONbits T3GCONbits `VES2275  1 e 1 @811 ]
+"26574
+[v _T3GATE T3GATE `VEuc  1 e 1 @812 ]
+"26764
+[v _T3CLK T3CLK `VEuc  1 e 1 @813 ]
+"27010
+[v _T4TMR T4TMR `VEuc  1 e 1 @814 ]
+"27015
+[v _TMR4 TMR4 `VEuc  1 e 1 @814 ]
+"27048
+[v _T4PR T4PR `VEuc  1 e 1 @815 ]
+"27053
+[v _PR4 PR4 `VEuc  1 e 1 @815 ]
+"27086
+[v _T4CON T4CON `VEuc  1 e 1 @816 ]
+"27122
+[s S1998 . 1 `uc 1 T4OUTPS 1 0 :4:0 
+`uc 1 T4CKPS 1 0 :3:4 
+`uc 1 T4ON 1 0 :1:7 
+]
+[s S2002 . 1 `uc 1 T4OUTPS0 1 0 :1:0 
+`uc 1 T4OUTPS1 1 0 :1:1 
+`uc 1 T4OUTPS2 1 0 :1:2 
+`uc 1 T4OUTPS3 1 0 :1:3 
+`uc 1 T4CKPS0 1 0 :1:4 
+`uc 1 T4CKPS1 1 0 :1:5 
+`uc 1 T4CKPS2 1 0 :1:6 
+]
+[s S2010 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR4ON 1 0 :1:7 
+]
+[u S2019 . 1 `S1372 1 . 1 0 `S1998 1 . 1 0 `S2002 1 . 1 0 `S2010 1 . 1 0 ]
+[v _T4CONbits T4CONbits `VES2019  1 e 1 @816 ]
+"27232
+[v _T4HLT T4HLT `VEuc  1 e 1 @817 ]
+"27265
+[s S1875 . 1 `uc 1 T4MODE 1 0 :5:0 
+`uc 1 T4CKSYNC 1 0 :1:5 
+`uc 1 T4CKPOL 1 0 :1:6 
+`uc 1 T4PSYNC 1 0 :1:7 
+]
+[s S1880 . 1 `uc 1 T4MODE0 1 0 :1:0 
+`uc 1 T4MODE1 1 0 :1:1 
+`uc 1 T4MODE2 1 0 :1:2 
+`uc 1 T4MODE3 1 0 :1:3 
+`uc 1 T4MODE4 1 0 :1:4 
+]
+[u S1886 . 1 `S1242 1 . 1 0 `S1247 1 . 1 0 `S1875 1 . 1 0 `S1880 1 . 1 0 ]
+[v _T4HLTbits T4HLTbits `VES1886  1 e 1 @817 ]
+"27360
+[v _T4CLKCON T4CLKCON `VEuc  1 e 1 @818 ]
+"27566
+[v _T4RST T4RST `VEuc  1 e 1 @819 ]
+"27597
+[s S1958 . 1 `uc 1 T4RSEL 1 0 :8:0 
+]
+[s S1960 . 1 `uc 1 T4RSEL0 1 0 :1:0 
+`uc 1 T4RSEL1 1 0 :1:1 
+`uc 1 T4RSEL2 1 0 :1:2 
+`uc 1 T4RSEL3 1 0 :1:3 
+`uc 1 T4RSEL4 1 0 :1:4 
+`uc 1 T4RSEL5 1 0 :1:5 
+`uc 1 T4RSEL6 1 0 :1:6 
+]
+[u S1968 . 1 `S1326 1 . 1 0 `S1328 1 . 1 0 `S1958 1 . 1 0 `S1960 1 . 1 0 ]
+[v _T4RSTbits T4RSTbits `VES1968  1 e 1 @819 ]
+"40015
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"40077
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"40139
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"40201
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"40263
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"40325
+[v _IOCAP IOCAP `VEuc  1 e 1 @1029 ]
+"40387
+[v _IOCAN IOCAN `VEuc  1 e 1 @1030 ]
+"40449
+[v _IOCAF IOCAF `VEuc  1 e 1 @1031 ]
+"40511
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"40573
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"40635
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"40697
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"40759
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"40821
+[v _IOCBP IOCBP `VEuc  1 e 1 @1037 ]
+"40883
+[v _IOCBN IOCBN `VEuc  1 e 1 @1038 ]
+"40945
+[v _IOCBF IOCBF `VEuc  1 e 1 @1039 ]
+"41007
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"41069
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"41131
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"41193
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"41255
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"41317
+[v _IOCCP IOCCP `VEuc  1 e 1 @1045 ]
+"41379
+[v _IOCCN IOCCN `VEuc  1 e 1 @1046 ]
+"41441
+[v _IOCCF IOCCF `VEuc  1 e 1 @1047 ]
+[s S532 . 1 `uc 1 IOCCF0 1 0 :1:0 
+`uc 1 IOCCF1 1 0 :1:1 
+`uc 1 IOCCF2 1 0 :1:2 
+`uc 1 IOCCF3 1 0 :1:3 
+`uc 1 IOCCF4 1 0 :1:4 
+`uc 1 IOCCF5 1 0 :1:5 
+`uc 1 IOCCF6 1 0 :1:6 
+`uc 1 IOCCF7 1 0 :1:7 
+]
+"41458
+[u S541 . 1 `S532 1 . 1 0 ]
+"41458
+"41458
+[v _IOCCFbits IOCCFbits `VES541  1 e 1 @1047 ]
+"41503
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"41565
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"41627
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"41689
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"41751
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"41813
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"41845
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"41883
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"41915
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"41947
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"41985
+[v _IOCEP IOCEP `VEuc  1 e 1 @1061 ]
+"42006
+[v _IOCEN IOCEN `VEuc  1 e 1 @1062 ]
+"42027
+[v _IOCEF IOCEF `VEuc  1 e 1 @1063 ]
+"42048
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"42110
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"42172
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"42234
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"42296
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+[s S511 . 1 `uc 1 SWIE 1 0 :1:0 
+`uc 1 HLVDIE 1 0 :1:1 
+`uc 1 OSFIE 1 0 :1:2 
+`uc 1 CSWIE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 IOCIE 1 0 :1:7 
+]
+"47130
+[u S520 . 1 `S511 1 . 1 0 ]
+"47130
+"47130
+[v _PIE0bits PIE0bits `VES520  1 e 1 @1182 ]
+[s S157 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+`uc 1 SPI1TXIE 1 0 :1:1 
+`uc 1 SPI1IE 1 0 :1:2 
+`uc 1 TMR2IE 1 0 :1:3 
+`uc 1 TMR1IE 1 0 :1:4 
+`uc 1 TMR1GIE 1 0 :1:5 
+`uc 1 CCP1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"47289
+[u S166 . 1 `S157 1 . 1 0 ]
+"47289
+"47289
+[v _PIE3bits PIE3bits `VES166  1 e 1 @1185 ]
+[s S805 . 1 `uc 1 SPI2RXIE 1 0 :1:0 
+`uc 1 SPI2TXIE 1 0 :1:1 
+`uc 1 SPI2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TMR3IE 1 0 :1:4 
+`uc 1 TMR3GIE 1 0 :1:5 
+`uc 1 PWM2PIE 1 0 :1:6 
+`uc 1 PWM2IE 1 0 :1:7 
+]
+"47402
+[u S814 . 1 `S805 1 . 1 0 ]
+"47402
+"47402
+[v _PIE5bits PIE5bits `VES814  1 e 1 @1187 ]
+[s S851 . 1 `uc 1 CCP3IE 1 0 :1:0 
+`uc 1 CLC6IE 1 0 :1:1 
+`uc 1 CWG3IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 DMA4SCNTIE 1 0 :1:4 
+`uc 1 DMA4DCNTIE 1 0 :1:5 
+`uc 1 DMA4ORIE 1 0 :1:6 
+`uc 1 DMA4AIE 1 0 :1:7 
+]
+"47747
+[u S860 . 1 `S851 1 . 1 0 ]
+"47747
+"47747
+[v _PIE11bits PIE11bits `VES860  1 e 1 @1193 ]
+[s S755 . 1 `uc 1 SWIF 1 0 :1:0 
+`uc 1 HLVDIF 1 0 :1:1 
+`uc 1 OSFIF 1 0 :1:2 
+`uc 1 CSWIF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 IOCIF 1 0 :1:7 
+]
+"48004
+[u S764 . 1 `S755 1 . 1 0 ]
+"48004
+"48004
+[v _PIR0bits PIR0bits `VES764  1 e 1 @1198 ]
+[s S650 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 ZCDIF 1 0 :1:1 
+`uc 1 ADIF 1 0 :1:2 
+`uc 1 ACTIF 1 0 :1:3 
+`uc 1 C1IF 1 0 :1:4 
+`uc 1 SMT1IF 1 0 :1:5 
+`uc 1 SMT1PRAIF 1 0 :1:6 
+`uc 1 SMT1PWAIF 1 0 :1:7 
+]
+"48056
+[u S659 . 1 `S650 1 . 1 0 ]
+"48056
+"48056
+[v _PIR1bits PIR1bits `VES659  1 e 1 @1199 ]
+[s S315 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"48163
+[u S324 . 1 `S315 1 . 1 0 ]
+"48163
+"48163
+[v _PIR3bits PIR3bits `VES324  1 e 1 @1201 ]
+[s S826 . 1 `uc 1 SPI2RXIF 1 0 :1:0 
+`uc 1 SPI2TXIF 1 0 :1:1 
+`uc 1 SPI2IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TMR3IF 1 0 :1:4 
+`uc 1 TMR3GIF 1 0 :1:5 
+`uc 1 PWM2PIF 1 0 :1:6 
+`uc 1 PWM2IF 1 0 :1:7 
+]
+"48276
+[u S835 . 1 `S826 1 . 1 0 ]
+"48276
+"48276
+[v _PIR5bits PIR5bits `VES835  1 e 1 @1203 ]
+[s S681 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 CLC2IF 1 0 :1:1 
+`uc 1 CWG1IF 1 0 :1:2 
+`uc 1 NCO1IF 1 0 :1:3 
+`uc 1 DMA2SCNTIF 1 0 :1:4 
+`uc 1 DMA2DCNTIF 1 0 :1:5 
+`uc 1 DMA2ORIF 1 0 :1:6 
+`uc 1 DMA2AIF 1 0 :1:7 
+]
+"48333
+[u S690 . 1 `S681 1 . 1 0 ]
+"48333
+"48333
+[v _PIR6bits PIR6bits `VES690  1 e 1 @1204 ]
+[s S712 . 1 `uc 1 INT2IF 1 0 :1:0 
+`uc 1 CLC5IF 1 0 :1:1 
+`uc 1 CWG2IF 1 0 :1:2 
+`uc 1 NCO2IF 1 0 :1:3 
+`uc 1 DMA3SCNTIF 1 0 :1:4 
+`uc 1 DMA3DCNTIF 1 0 :1:5 
+`uc 1 DMA3ORIF 1 0 :1:6 
+`uc 1 DMA3AIF 1 0 :1:7 
+]
+"48559
+[u S721 . 1 `S712 1 . 1 0 ]
+"48559
+"48559
+[v _PIR10bits PIR10bits `VES721  1 e 1 @1208 ]
+[s S872 . 1 `uc 1 CCP3IF 1 0 :1:0 
+`uc 1 CLC6IF 1 0 :1:1 
+`uc 1 CWG3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 DMA4SCNTIF 1 0 :1:4 
+`uc 1 DMA4DCNTIF 1 0 :1:5 
+`uc 1 DMA4ORIF 1 0 :1:6 
+`uc 1 DMA4AIF 1 0 :1:7 
+]
+"48621
+[u S881 . 1 `S872 1 . 1 0 ]
+"48621
+"48621
+[v _PIR11bits PIR11bits `VES881  1 e 1 @1209 ]
+"48861
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+[s S2627 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"48878
+[u S2636 . 1 `S2627 1 . 1 0 ]
+"48878
+"48878
+[v _LATAbits LATAbits `VES2636  1 e 1 @1214 ]
+"48923
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+[s S2664 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"48940
+[u S2673 . 1 `S2664 1 . 1 0 ]
+"48940
+"48940
+[v _LATBbits LATBbits `VES2673  1 e 1 @1215 ]
+"48985
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+[s S2768 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"49002
+[u S2777 . 1 `S2768 1 . 1 0 ]
+"49002
+"49002
+[v _LATCbits LATCbits `VES2777  1 e 1 @1216 ]
+"49047
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+[s S2604 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"49064
+[u S2613 . 1 `S2604 1 . 1 0 ]
+"49064
+"49064
+[v _LATDbits LATDbits `VES2613  1 e 1 @1217 ]
+"49109
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+"49141
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+[s S2685 . 1 `uc 1 LATF0 1 0 :1:0 
+`uc 1 LATF1 1 0 :1:1 
+`uc 1 LATF2 1 0 :1:2 
+`uc 1 LATF3 1 0 :1:3 
+`uc 1 LATF4 1 0 :1:4 
+`uc 1 LATF5 1 0 :1:5 
+`uc 1 LATF6 1 0 :1:6 
+`uc 1 LATF7 1 0 :1:7 
+]
+"49158
+[u S2694 . 1 `S2685 1 . 1 0 ]
+"49158
+"49158
+[v _LATFbits LATFbits `VES2694  1 e 1 @1219 ]
+"49203
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"49265
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"49327
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+[s S251 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"49344
+[u S260 . 1 `S251 1 . 1 0 ]
+"49344
+"49344
+[v _TRISCbits TRISCbits `VES260  1 e 1 @1224 ]
+"49389
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"49451
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+"49483
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+[s S624 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"49913
+[s S632 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"49913
+[u S635 . 1 `S624 1 . 1 0 `S632 1 . 1 0 ]
+"49913
+"49913
+[v _INTCON0bits INTCON0bits `VES635  1 e 1 @1238 ]
+"5 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_matrix.c
+[v _ledMatrix ledMatrix `[5]us  1 s 10 ledMatrix ]
+"8
+[v _ledMatrix2 ledMatrix2 `[5]us  1 s 10 ledMatrix2 ]
+"6 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_shift.c
+[v _shiftData_1 shiftData_1 `VEus  1 e 2 0 ]
+"7
+[v _clearOutData_1 clearOutData_1 `VEus  1 e 2 0 ]
+"8
+[v _bitIndex_1 bitIndex_1 `VEuc  1 e 1 0 ]
+"9
+[v _state_1 state_1 `VEuc  1 e 1 0 ]
+"10
+[v _clearOff_1 clearOff_1 `VEuc  1 e 1 0 ]
+"13
+[v _shiftData_2 shiftData_2 `VEus  1 e 2 0 ]
+"14
+[v _clearOutData_2 clearOutData_2 `VEus  1 e 2 0 ]
+"15
+[v _bitIndex_2 bitIndex_2 `VEuc  1 e 1 0 ]
+"16
+[v _state_2 state_2 `VEuc  1 e 1 0 ]
+"17
+[v _clearOff_2 clearOff_2 `VEuc  1 e 1 0 ]
+"21 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/main.c
+[v _nrf_flag nrf_flag `a  1 e 1 0 ]
+"22
+[v _currentRow currentRow `VEuc  1 e 1 0 ]
+"23
+[v _currentCol currentCol `VEuc  1 e 1 0 ]
+"24
+[v _currentMode currentMode `VEuc  1 e 1 0 ]
+[s S151 . 5 `uc 1 con0 1 0 `uc 1 con1 1 1 `uc 1 con2 1 2 `uc 1 baud 1 3 `uc 1 clksel 1 4 ]
+"63 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/spi/src/spi1.c
+[v _spi1_configuration spi1_configuration `C[3]S151  1 s 15 spi1_configuration ]
+"38 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/interrupt.c
+[v _INT0_InterruptHandler INT0_InterruptHandler `*.38(v  1 e 3 0 ]
+"39
+[v _INT1_InterruptHandler INT1_InterruptHandler `*.38(v  1 e 3 0 ]
+"40
+[v _INT2_InterruptHandler INT2_InterruptHandler `*.38(v  1 e 3 0 ]
+"37 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/pins.c
+[v _nRF24_IRQ_InterruptHandler nRF24_IRQ_InterruptHandler `*.38(v  1 e 3 0 ]
+"38 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr0.c
+[v _tmr0PeriodCount tmr0PeriodCount `VEus  1 s 2 tmr0PeriodCount ]
+"39
+[v _TMR0_OverflowCallback TMR0_OverflowCallback `*.38(v  1 s 3 TMR0_OverflowCallback ]
+"43 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"54
+[v _TMR1_OverflowCallback TMR1_OverflowCallback `*.38(v  1 s 3 TMR1_OverflowCallback ]
+"56
+[v _TMR1_GateCallback TMR1_GateCallback `*.38(v  1 s 3 TMR1_GateCallback ]
+"50 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_OverflowCallback TMR2_OverflowCallback `*.38(v  1 s 3 TMR2_OverflowCallback ]
+"43 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr3.c
+[v _timer3ReloadVal timer3ReloadVal `VEus  1 e 2 0 ]
+"54
+[v _TMR3_OverflowCallback TMR3_OverflowCallback `*.38(v  1 s 3 TMR3_OverflowCallback ]
+"56
+[v _TMR3_GateCallback TMR3_GateCallback `*.38(v  1 s 3 TMR3_GateCallback ]
+"50 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v _TMR4_OverflowCallback TMR4_OverflowCallback `*.38(v  1 s 3 TMR4_OverflowCallback ]
+"66 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mirf.c
+[v _rf24_datarates rf24_datarates `[3][8]uc  1 e 24 0 ]
+"67
+[v _rf24_crclength rf24_crclength `C[3][10]uc  1 e 30 0 ]
+"68
+[v _rf24_pa_dbm rf24_pa_dbm `[4][8]uc  1 e 32 0 ]
+"238 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"260
+} 0
+"94
+[v _slave slave `(v  1 e 1 0 ]
+{
+"132
+[v slave@buf buf `[32]uc  1 a 32 0 ]
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+"95
+[v slave@dev dev `S2409  1 a 3 32 ]
+"94
+[v slave@pvParameters pvParameters `*.39v  1 p 2 38 ]
+"145
+} 0
+"15 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_matrix.c
+[v _updateLedMatrices updateLedMatrices `(v  1 e 1 0 ]
+{
+"16
+[v updateLedMatrices@i i `uc  1 a 1 26 ]
+"15
+[v updateLedMatrices@payload payload `*.39uc  1 p 2 12 ]
+"20
+} 0
+"3 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+[v strncmp@l l `*.39Cuc  1 p 2 12 ]
+[v strncmp@r r `*.32Cuc  1 p 2 14 ]
+[v strncmp@n n `ui  1 p 2 16 ]
+"8
+} 0
+"94 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v _TMR4_Start TMR4_Start `(v  1 e 1 0 ]
+{
+"98
+} 0
+"100 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+{
+"104
+} 0
+"98 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_Stop TMR1_Stop `(v  1 e 1 0 ]
+{
+"102
+} 0
+"84 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Stop TMR0_Stop `(v  1 e 1 0 ]
+{
+"87
+} 0
+"117 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mirf.c
+[v _Nrf24_setTADDR Nrf24_setTADDR `(i  1 e 2 0 ]
+{
+"124
+[v Nrf24_setTADDR@i i `i  1 a 2 36 ]
+"122
+[v Nrf24_setTADDR@buffer buffer `[5]uc  1 a 5 29 ]
+"119
+[v Nrf24_setTADDR@ret ret `i  1 a 2 34 ]
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+"117
+[v Nrf24_setTADDR@dev dev `*.39S2409  1 p 2 22 ]
+[v Nrf24_setTADDR@adr adr `*.32uc  1 p 2 24 ]
+"128
+} 0
+"104
+[v _Nrf24_setRADDR Nrf24_setRADDR `(i  1 e 2 0 ]
+{
+"110
+[v Nrf24_setRADDR@i i `i  1 a 2 36 ]
+"108
+[v Nrf24_setRADDR@buffer buffer `[5]uc  1 a 5 29 ]
+"106
+[v Nrf24_setRADDR@ret ret `i  1 a 2 34 ]
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+"104
+[v Nrf24_setRADDR@dev dev `*.39S2409  1 p 2 22 ]
+[v Nrf24_setRADDR@adr adr `*.32uc  1 p 2 24 ]
+"114
+} 0
+"220
+[v _Nrf24_writeRegister Nrf24_writeRegister `(v  1 e 1 0 ]
+{
+[v Nrf24_writeRegister@reg reg `uc  1 p 1 wreg ]
+[v Nrf24_writeRegister@reg reg `uc  1 p 1 wreg ]
+[v Nrf24_writeRegister@value value `*.32uc  1 p 2 18 ]
+[v Nrf24_writeRegister@len len `uc  1 p 1 20 ]
+"222
+[v Nrf24_writeRegister@reg reg `uc  1 p 1 21 ]
+"228
+} 0
+"54
+[v _SPI_write_buff SPI_write_buff `(v  1 e 1 0 ]
+{
+"56
+[v SPI_write_buff@i i `uc  1 a 1 17 ]
+"54
+[v SPI_write_buff@buffer buffer `*.32uc  1 p 2 14 ]
+[v SPI_write_buff@bytes bytes `uc  1 p 1 16 ]
+"63
+} 0
+"43 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/delay.c
+[v _DELAY_microseconds DELAY_microseconds `(v  1 e 1 0 ]
+{
+[v DELAY_microseconds@microseconds microseconds `us  1 p 2 12 ]
+"54
+} 0
+"70 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mirf.c
+[v _Nrf24_init Nrf24_init `(v  1 e 1 0 ]
+{
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+[v Nrf24_init@dev dev `*.39S2409  1 p 2 13 ]
+"79
+} 0
+"91 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/spi/src/spi1.c
+[v _SPI1_Open SPI1_Open `(a  1 e 1 0 ]
+{
+[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 p 1 wreg ]
+[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 p 1 wreg ]
+"94
+[v SPI1_Open@spiConfigIndex spiConfigIndex `uc  1 p 1 12 ]
+"110
+} 0
+"182 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mirf.c
+[v _Nrf24_getData Nrf24_getData `(v  1 e 1 0 ]
+{
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+[v Nrf24_getData@dev dev `*.39S2409  1 p 2 18 ]
+[v Nrf24_getData@data data `*.39uc  1 p 2 20 ]
+"197
+} 0
+"160
+[v _Nrf24_dataReady Nrf24_dataReady `(a  1 e 1 0 ]
+{
+"162
+[v Nrf24_dataReady@status status `uc  1 a 1 25 ]
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+"160
+[v Nrf24_dataReady@dev dev `*.39S2409  1 p 2 23 ]
+"167
+} 0
+"89
+[v _Nrf24_config Nrf24_config `(v  1 e 1 0 ]
+{
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+[v Nrf24_config@dev dev `*.39S2409  1 p 2 23 ]
+[v Nrf24_config@channel channel `uc  1 p 1 25 ]
+[v Nrf24_config@payload payload `uc  1 p 1 26 ]
+"101
+} 0
+"305
+[v _Nrf24_powerUpRx Nrf24_powerUpRx `(v  1 e 1 0 ]
+{
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+[v Nrf24_powerUpRx@dev dev `*.39S2409  1 p 2 16 ]
+"311
+} 0
+"299
+[v _Nrf24_getStatus Nrf24_getStatus `(uc  1 e 1 0 ]
+{
+"300
+[v Nrf24_getStatus@rv rv `uc  1 a 1 22 ]
+"303
+} 0
+"313
+[v _Nrf24_flushRx Nrf24_flushRx `(v  1 e 1 0 ]
+{
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+[v Nrf24_flushRx@dev dev `*.39S2409  1 p 2 14 ]
+"318
+} 0
+"37 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/delay.c
+[v _DELAY_milliseconds DELAY_milliseconds `(v  1 e 1 0 ]
+{
+[v DELAY_milliseconds@milliseconds milliseconds `us  1 p 2 12 ]
+"41
+} 0
+"76 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/main.c
+[v _AdvancedSettings AdvancedSettings `(v  1 e 1 0 ]
+{
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+[v AdvancedSettings@dev dev `*.39S2409  1 p 2 26 ]
+"90
+} 0
+"366 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mirf.c
+[v _Nrf24_setRetransmitDelay Nrf24_setRetransmitDelay `(v  1 e 1 0 ]
+{
+"368
+[v Nrf24_setRetransmitDelay@value value `uc  1 a 1 25 ]
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+"366
+[v Nrf24_setRetransmitDelay@dev dev `*.39S2409  1 p 2 22 ]
+[v Nrf24_setRetransmitDelay@val val `uc  1 p 1 24 ]
+"373
+} 0
+"345
+[v _Nrf24_SetSpeedDataRates Nrf24_SetSpeedDataRates `(v  1 e 1 0 ]
+{
+"349
+[v Nrf24_SetSpeedDataRates@value value `uc  1 a 1 25 ]
+[s S2409 . 3 `uc 1 PTX 1 0 `uc 1 channel 1 1 `uc 1 payload 1 2 ]
+"345
+[v Nrf24_SetSpeedDataRates@dev dev `*.39S2409  1 p 2 22 ]
+[v Nrf24_SetSpeedDataRates@val val `uc  1 p 1 24 ]
+"363
+} 0
+"209
+[v _Nrf24_readRegister Nrf24_readRegister `(v  1 e 1 0 ]
+{
+[v Nrf24_readRegister@reg reg `uc  1 p 1 wreg ]
+[v Nrf24_readRegister@reg reg `uc  1 p 1 wreg ]
+[v Nrf24_readRegister@value value `*.39uc  1 p 2 18 ]
+[v Nrf24_readRegister@len len `uc  1 p 1 20 ]
+"211
+[v Nrf24_readRegister@reg reg `uc  1 p 1 21 ]
+"217
+} 0
+"44
+[v _SPI_read_buff SPI_read_buff `(v  1 e 1 0 ]
+{
+"46
+[v SPI_read_buff@i i `uc  1 a 1 17 ]
+"44
+[v SPI_read_buff@buffer buffer `*.39uc  1 p 2 14 ]
+[v SPI_read_buff@bytes bytes `uc  1 p 1 16 ]
+"52
+} 0
+"200
+[v _Nrf24_configRegister Nrf24_configRegister `(v  1 e 1 0 ]
+{
+[v Nrf24_configRegister@reg reg `uc  1 p 1 wreg ]
+[v Nrf24_configRegister@reg reg `uc  1 p 1 wreg ]
+[v Nrf24_configRegister@value value `uc  1 p 1 14 ]
+"202
+[v Nrf24_configRegister@reg reg `uc  1 p 1 15 ]
+"206
+} 0
+"209 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/spi/src/spi1.c
+[v _SPI1_ByteExchange SPI1_ByteExchange `(uc  1 e 1 0 ]
+{
+[v SPI1_ByteExchange@byteData byteData `uc  1 p 1 wreg ]
+"211
+[v SPI1_ByteExchange@returnValue returnValue `uc  1 a 1 13 ]
+"209
+[v SPI1_ByteExchange@byteData byteData `uc  1 p 1 wreg ]
+"213
+[v SPI1_ByteExchange@byteData byteData `uc  1 p 1 12 ]
+"230
+} 0
+"38 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"49
+} 0
+"57 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"135
+[v _TMR4_OverflowCallbackRegister TMR4_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR4_OverflowCallbackRegister@InterruptHandler InterruptHandler `*.38(v  1 p 3 12 ]
+"138
+} 0
+"59 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"175
+[v _TMR3_OverflowCallbackRegister TMR3_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR3_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 12 ]
+"178
+} 0
+"201
+[v _TMR3_GateCallbackRegister TMR3_GateCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR3_GateCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 12 ]
+"204
+} 0
+"57 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"134
+[v _TMR2_OverflowCallbackRegister TMR2_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR2_OverflowCallbackRegister@InterruptHandler InterruptHandler `*.38(v  1 p 3 12 ]
+"137
+} 0
+"59 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"175
+[v _TMR1_OverflowCallbackRegister TMR1_OverflowCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR1_OverflowCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 12 ]
+"178
+} 0
+"201
+[v _TMR1_GateCallbackRegister TMR1_GateCallbackRegister `(v  1 e 1 0 ]
+{
+[v TMR1_GateCallbackRegister@CallbackHandler CallbackHandler `*.38(v  1 p 3 12 ]
+"204
+} 0
+"46 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"64
+} 0
+"69 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/spi/src/spi1.c
+[v _SPI1_Initialize SPI1_Initialize `(v  1 e 1 0 ]
+{
+"84
+} 0
+"39 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"146
+} 0
+"175
+[v _nRF24_IRQ_SetInterruptHandler nRF24_IRQ_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v nRF24_IRQ_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 12 ]
+"177
+} 0
+"42 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"183
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 12 ]
+"185
+} 0
+"157
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 12 ]
+"159
+} 0
+"131
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 12 ]
+"133
+} 0
+"39 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"80 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"111
+} 0
+"124 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v _TMR4_ISR TMR4_ISR `(v  1 e 1 0 ]
+{
+"133
+} 0
+"160 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr3.c
+[v _TMR3_OverflowISR TMR3_OverflowISR `(v  1 e 1 0 ]
+{
+"173
+} 0
+"118
+[v _TMR3_Write TMR3_Write `(v  1 e 1 0 ]
+{
+[v TMR3_Write@timerVal timerVal `ui  1 p 2 0 ]
+"138
+} 0
+"124 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"132
+} 0
+"160 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_OverflowISR TMR1_OverflowISR `(v  1 e 1 0 ]
+{
+"173
+} 0
+"19 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_shift.c
+[v _LEDMatrix_RowController_TimerISR LEDMatrix_RowController_TimerISR `(v  1 e 1 0 ]
+{
+"20
+[v LEDMatrix_RowController_TimerISR@row row `uc  1 s 1 row ]
+"31
+} 0
+"33
+[v _LEDMatrix_TimerISR LEDMatrix_TimerISR `(v  1 e 1 0 ]
+{
+"34
+[v LEDMatrix_TimerISR@clockState clockState `uc  1 s 1 clockState ]
+"35
+[v LEDMatrix_TimerISR@currentRow currentRow `uc  1 s 1 currentRow ]
+"113
+} 0
+"180 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr3.c
+[v _TMR3_DefaultOverflowCallback TMR3_DefaultOverflowCallback `(v  1 s 1 TMR3_DefaultOverflowCallback ]
+{
+"184
+} 0
+"180 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_DefaultOverflowCallback TMR1_DefaultOverflowCallback `(v  1 s 1 TMR1_DefaultOverflowCallback ]
+{
+"184
+} 0
+"139 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_DefaultOverflowCallback TMR2_DefaultOverflowCallback `(v  1 s 1 TMR2_DefaultOverflowCallback ]
+{
+"143
+} 0
+"140 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v _TMR4_DefaultOverflowCallback TMR4_DefaultOverflowCallback `(v  1 s 1 TMR4_DefaultOverflowCallback ]
+{
+"144
+} 0
+"118 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr1.c
+[v _TMR1_Write TMR1_Write `(v  1 e 1 0 ]
+{
+[v TMR1_Write@timerVal timerVal `ui  1 p 2 0 ]
+"138
+} 0
+"94 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v i2_TMR4_Start TMR4_Start `(v  1 e 1 0 ]
+{
+"98
+} 0
+"100 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v i2_TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+{
+"104
+} 0
+"200 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_shift.c
+[v _SetRow_Matrix2 SetRow_Matrix2 `(v  1 e 1 0 ]
+{
+[v SetRow_Matrix2@row row `uc  1 p 1 wreg ]
+[v SetRow_Matrix2@row row `uc  1 p 1 wreg ]
+[v SetRow_Matrix2@row row `uc  1 p 1 0 ]
+"209
+} 0
+"116
+[v _SetRow_Matrix1 SetRow_Matrix1 `(v  1 e 1 0 ]
+{
+[v SetRow_Matrix1@row row `uc  1 p 1 wreg ]
+[v SetRow_Matrix1@row row `uc  1 p 1 wreg ]
+[v SetRow_Matrix1@row row `uc  1 p 1 0 ]
+"125
+} 0
+"55 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/led_matrix.c
+[v _getRowData_Matrix2 getRowData_Matrix2 `(us  1 e 2 0 ]
+{
+[v getRowData_Matrix2@row row `uc  1 p 1 wreg ]
+[v getRowData_Matrix2@row row `uc  1 p 1 wreg ]
+[v getRowData_Matrix2@row row `uc  1 p 1 2 ]
+"57
+} 0
+"11
+[v _getRowData getRowData `(us  1 e 2 0 ]
+{
+[v getRowData@row row `uc  1 p 1 wreg ]
+[v getRowData@row row `uc  1 p 1 wreg ]
+[v getRowData@row row `uc  1 p 1 2 ]
+"13
+} 0
+"7 /Applications/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"100 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr4.c
+[v _TMR4_Stop TMR4_Stop `(v  1 e 1 0 ]
+{
+"104
+} 0
+"94 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr2.c
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+{
+"98
+} 0
+"139 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/timer/src/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"149
+} 0
+"156
+[v _TMR0_DefaultCallback TMR0_DefaultCallback `(v  1 s 1 TMR0_DefaultCallback ]
+{
+"159
+} 0
+"148 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"155
+} 0
+"160
+[v _nRF24_IRQ_ISR nRF24_IRQ_ISR `(v  1 e 1 0 ]
+{
+"170
+} 0
+"182
+[v _nRF24_IRQ_DefaultInterruptHandler nRF24_IRQ_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"185
+} 0
+"71 /Users/tolgakuntman/MPLABXProjects/LED_matrix_nrf.X/main.c
+[v _nrf_irq nrf_irq `(v  1 e 1 0 ]
+{
+"73
+} 0
