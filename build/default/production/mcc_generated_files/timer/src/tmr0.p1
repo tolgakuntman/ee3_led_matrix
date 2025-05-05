@@ -2649,11 +2649,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _TMR0_Initialize ]
 [f ]
 "48
-[; ;mcc_generated_files/timer/src/tmr0.c: 48:     TMR0H = 0xE7;
-[e = _TMR0H -> -> 231 `i `uc ]
+[; ;mcc_generated_files/timer/src/tmr0.c: 48:     TMR0H = 0x85;
+[e = _TMR0H -> -> 133 `i `uc ]
 "49
-[; ;mcc_generated_files/timer/src/tmr0.c: 49:     TMR0L = 0x96;
-[e = _TMR0L -> -> 150 `i `uc ]
+[; ;mcc_generated_files/timer/src/tmr0.c: 49:     TMR0L = 0xEE;
+[e = _TMR0L -> -> 238 `i `uc ]
 "51
 [; ;mcc_generated_files/timer/src/tmr0.c: 51:     T0CON1 = (3 << 0x5)
 [e = _T0CON1 -> | | << -> 3 `i -> 5 `i << -> 10 `i -> 0 `i << -> 1 `i -> 4 `i `uc ]

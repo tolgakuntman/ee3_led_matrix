@@ -19,6 +19,7 @@
 
 //global variables
 bool nrf_flag=false;
+bool nrf_refresh=false;
 volatile uint8_t currentRow = 0;
 volatile uint8_t currentCol = 0;
 volatile uint8_t currentMode = 0; // 0 = Red, 1 = Blue, 2 = Green
@@ -71,6 +72,9 @@ void led_toggle() {
 void nrf_irq(){
     nrf_flag=true;
 }
+void nrf_refresh_irq(){
+    nrf_refresh=true;
+}
 
 #if CONFIG_ADVANCED
 void AdvancedSettings(NRF24_t * dev)
@@ -109,10 +113,10 @@ void slave(void *pvParameters) {
     Nrf24_configRegister(NRF_STATUS, (1 << RX_DR) | (1 << TX_DS) | (1 << MAX_RT));
     TMR1_Stop();
     TMR2_Stop();
-    TMR0_Stop();
+    TMR0_Start();
     TMR4_Start();
     nRF24_IRQ_SetInterruptHandler(nrf_irq);
-
+    TMR0_OverflowCallbackRegister(nrf_refresh_irq);
     INTERRUPT_GlobalInterruptEnable();
     while (1) {
 
@@ -129,18 +133,22 @@ void slave(void *pvParameters) {
 ////        }
         if(nrf_flag){
 		if (Nrf24_dataReady(&dev)) {
-            uint8_t buf[32] = {0};
-			Nrf24_getData(&dev, buf);
-            if (strncmp((char*)buf, "LED", 8) == 0) {
-            // buf[0..7] = "LED" + padding
-            // buf[8..27] = payload (20 bytes for two matrices)
-            updateLedMatrices(&buf[8]);
+                uint8_t buf[32] = {0};
+                Nrf24_getData(&dev, buf);
+                if (strncmp((char*)buf, "LED", 8) == 0) {
+                // buf[0..7] = "LED" + padding
+                // buf[8..27] = payload (20 bytes for two matrices)
+                updateLedMatrices(&buf[8]);
+                }
             }
-		}
-        nrf_flag=false;
+            nrf_flag=false;
         }
-
-        DELAY_milliseconds(10);  // Avoid watchdog
+        if(nrf_refresh){
+            Nrf24_flushRx(&dev);
+            Nrf24_configRegister(NRF_STATUS, (1 << RX_DR) | (1 << TX_DS) | (1 << MAX_RT));
+            nrf_refresh=false;
+        }
+        DELAY_milliseconds(1);  // Avoid watchdog
     }
 }
 #endif // CONFIG_SLAVE

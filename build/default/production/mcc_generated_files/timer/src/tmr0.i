@@ -29349,8 +29349,8 @@ static void TMR0_DefaultCallback(void);
 
 void TMR0_Initialize(void)
 {
-    TMR0H = 0xE7;
-    TMR0L = 0x96;
+    TMR0H = 0x85;
+    TMR0L = 0xEE;
 
     T0CON1 = (3 << 0x5)
         | (10 << 0x0)

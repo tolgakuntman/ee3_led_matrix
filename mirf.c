@@ -3,6 +3,8 @@
  * Author: tolgakuntman
  * ADAPTED FROM THE EPS-IDF FRAMEWORK BASED MIRF LIBRARY
  * ESPIDF MIRF LIBRARY: https://github.com/nopnop2002/esp-idf-mirf/tree/master
+ * changed by the help of Yusuf Hosny and Tolga Kuntman
+*/
  * Created on December 11, 2024, 3:35 PM
  */
 

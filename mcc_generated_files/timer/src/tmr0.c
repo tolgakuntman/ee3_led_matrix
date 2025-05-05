@@ -45,8 +45,8 @@ static void TMR0_DefaultCallback(void);
 
 void TMR0_Initialize(void)
 {
-    TMR0H = 0xE7;                    // Period 100ms; Frequency 62500 Hz; Count 59286
-    TMR0L = 0x96;
+    TMR0H = 0x85;                    // Period 500ms; Frequency 62500 Hz; Count 34286
+    TMR0L = 0xEE;
     
     T0CON1 = (3 << _T0CON1_T0CS_POSN)   // T0CS HFINTOSC
         | (10 << _T0CON1_T0CKPS_POSN)   // T0CKPS 1:1024

@@ -30585,6 +30585,7 @@ void LEDMatrix2_RowController_TimerISR(void);
 # 12 "main.c" 2
 # 21 "main.c"
 _Bool nrf_flag=0;
+_Bool nrf_refresh=0;
 volatile uint8_t currentRow = 0;
 volatile uint8_t currentCol = 0;
 volatile uint8_t currentMode = 0;
@@ -30637,6 +30638,9 @@ void led_toggle() {
 void nrf_irq(){
     nrf_flag=1;
 }
+void nrf_refresh_irq(){
+    nrf_refresh=1;
+}
 
 
 void AdvancedSettings(NRF24_t * dev)
@@ -30675,30 +30679,34 @@ void slave(void *pvParameters) {
     Nrf24_configRegister(0x07, (1 << 6) | (1 << 5) | (1 << 4));
     TMR1_Stop();
     TMR2_Stop();
-    TMR0_Stop();
+    TMR0_Start();
     TMR4_Start();
     nRF24_IRQ_SetInterruptHandler(nrf_irq);
-
+    TMR0_OverflowCallbackRegister(nrf_refresh_irq);
     (INTCON0bits.GIE = 1);
     while (1) {
-# 130 "main.c"
+# 134 "main.c"
         if(nrf_flag){
   if (Nrf24_dataReady(&dev)) {
-            uint8_t buf[32] = {0};
-   Nrf24_getData(&dev, buf);
-            if (strncmp((char*)buf, "LED", 8) == 0) {
+                uint8_t buf[32] = {0};
+                Nrf24_getData(&dev, buf);
+                if (strncmp((char*)buf, "LED", 8) == 0) {
 
 
-            updateLedMatrices(&buf[8]);
+                updateLedMatrices(&buf[8]);
+                }
             }
-  }
-        nrf_flag=0;
+            nrf_flag=0;
         }
-
-        DELAY_milliseconds(10);
+        if(nrf_refresh){
+            Nrf24_flushRx(&dev);
+            Nrf24_configRegister(0x07, (1 << 6) | (1 << 5) | (1 << 4));
+            nrf_refresh=0;
+        }
+        DELAY_milliseconds(1);
     }
 }
-# 238 "main.c"
+# 246 "main.c"
 void main(void)
 {
     SYSTEM_Initialize();
@@ -30711,5 +30719,5 @@ void main(void)
 
 
     slave(((void*)0));
-# 260 "main.c"
+# 268 "main.c"
 }

@@ -48,9 +48,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "423 ./mcc_generated_files/system/../timer/tmr2.h
 [; ;./mcc_generated_files/system/../timer/tmr2.h: 423: void TMR2_Stop(void);
 [v _TMR2_Stop `(v ~T0 @X0 0 ef ]
-"195 ./mcc_generated_files/system/../timer/tmr0.h
-[; ;./mcc_generated_files/system/../timer/tmr0.h: 195: void TMR0_Stop(void);
-[v _TMR0_Stop `(v ~T0 @X0 0 ef ]
+"186 ./mcc_generated_files/system/../timer/tmr0.h
+[; ;./mcc_generated_files/system/../timer/tmr0.h: 186: void TMR0_Start(void);
+[v _TMR0_Start `(v ~T0 @X0 0 ef ]
 "414 ./mcc_generated_files/system/../timer/tmr4.h
 [; ;./mcc_generated_files/system/../timer/tmr4.h: 414: void TMR4_Start(void);
 [v _TMR4_Start `(v ~T0 @X0 0 ef ]
@@ -58,7 +58,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "525 ./mcc_generated_files/system/../system/pins.h
 [; ;./mcc_generated_files/system/../system/pins.h: 525: void nRF24_IRQ_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _nRF24_IRQ_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F17633 ]
-[v F18133 `(v ~T0 @X0 0 tf ]
+[v F18135 `(v ~T0 @X0 0 tf ]
+[v F17966 `(v ~T0 @X0 0 tf ]
+"280 ./mcc_generated_files/system/../timer/tmr0.h
+[; ;./mcc_generated_files/system/../timer/tmr0.h: 280: void TMR0_OverflowCallbackRegister(void (* CallbackHandler)(void));
+[v _TMR0_OverflowCallbackRegister `(v ~T0 @X0 0 ef1`*F17966 ]
+[v F18137 `(v ~T0 @X0 0 tf ]
 "49899 /Users/tolgakuntman/.mchp_packs/Microchip/PIC18F-Q_DFP/1.25.433/xc8/pic/include/proc/pic18f57q43.h
 [; ;/Users/tolgakuntman/.mchp_packs/Microchip/PIC18F-Q_DFP/1.25.433/xc8/pic/include/proc/pic18f57q43.h: 49899:     struct {
 [s S2322 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -86,6 +91,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "19 ./led_matrix.h
 [; ;./led_matrix.h: 19: void updateLedMatrices(uint8_t* payload);
 [v _updateLedMatrices `(v ~T0 @X0 0 ef1`*uc ]
+"201 ./mirf.h
+[; ;./mirf.h: 201: void Nrf24_flushRx(NRF24_t * dev);
+[v _Nrf24_flushRx `(v ~T0 @X0 0 ef1`*S2419 ]
 "44 ./mcc_generated_files/timer/delay.h
 [; ;./mcc_generated_files/timer/delay.h: 44: void DELAY_milliseconds(uint16_t milliseconds);
 [v _DELAY_milliseconds `(v ~T0 @X0 0 ef1`us ]
@@ -2685,79 +2693,85 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `a
 ]
 "22
-[; ;main.c: 22: volatile uint8_t currentRow = 0;
+[; ;main.c: 22: _Bool nrf_refresh=0;
+[v _nrf_refresh `a ~T0 @X0 1 e ]
+[i _nrf_refresh
+-> -> 0 `i `a
+]
+"23
+[; ;main.c: 23: volatile uint8_t currentRow = 0;
 [v _currentRow `Vuc ~T0 @X0 1 e ]
 [i _currentRow
 -> -> 0 `i `uc
 ]
-"23
-[; ;main.c: 23: volatile uint8_t currentCol = 0;
+"24
+[; ;main.c: 24: volatile uint8_t currentCol = 0;
 [v _currentCol `Vuc ~T0 @X0 1 e ]
 [i _currentCol
 -> -> 0 `i `uc
 ]
-"24
-[; ;main.c: 24: volatile uint8_t currentMode = 0;
+"25
+[; ;main.c: 25: volatile uint8_t currentMode = 0;
 [v _currentMode `Vuc ~T0 @X0 1 e ]
 [i _currentMode
 -> -> 0 `i `uc
 ]
-"27
-[; ;main.c: 27: void led_toggle() {
+"28
+[; ;main.c: 28: void led_toggle() {
 [v _led_toggle `(v ~T0 @X0 1 ef ]
 {
 [e :U _led_toggle ]
 [f ]
-"28
-[; ;main.c: 28:     switch (currentMode) {
+"29
+[; ;main.c: 29:     switch (currentMode) {
 [e $U 2422  ]
 {
-"29
-[; ;main.c: 29:         case 0:
-[e :U 2423 ]
 "30
-[; ;main.c: 30:             setLEDToRed(currentRow, currentCol);
-[e ( _setLEDToRed (2 , _currentRow _currentCol ]
+[; ;main.c: 30:         case 0:
+[e :U 2423 ]
 "31
-[; ;main.c: 31:             setLEDToRed_Matrix2(currentRow, currentCol);
-[e ( _setLEDToRed_Matrix2 (2 , _currentRow _currentCol ]
+[; ;main.c: 31:             setLEDToRed(currentRow, currentCol);
+[e ( _setLEDToRed (2 , _currentRow _currentCol ]
 "32
-[; ;main.c: 32:             break;
-[e $U 2421  ]
+[; ;main.c: 32:             setLEDToRed_Matrix2(currentRow, currentCol);
+[e ( _setLEDToRed_Matrix2 (2 , _currentRow _currentCol ]
 "33
-[; ;main.c: 33:         case 1:
-[e :U 2424 ]
+[; ;main.c: 33:             break;
+[e $U 2421  ]
 "34
-[; ;main.c: 34:             if (currentRow == 0 && currentCol == 0) {
+[; ;main.c: 34:         case 1:
+[e :U 2424 ]
+"35
+[; ;main.c: 35:             if (currentRow == 0 && currentCol == 0) {
 [e $ ! && == -> _currentRow `i -> 0 `i == -> _currentCol `i -> 0 `i 2425  ]
 {
-"35
-[; ;main.c: 35:                 initLEDMatrixBlue();
-[e ( _initLEDMatrixBlue ..  ]
 "36
-[; ;main.c: 36:                 initLEDMatrixBlue_Matrix2();
-[e ( _initLEDMatrixBlue_Matrix2 ..  ]
+[; ;main.c: 36:                 initLEDMatrixBlue();
+[e ( _initLEDMatrixBlue ..  ]
 "37
-[; ;main.c: 37:             }
+[; ;main.c: 37:                 initLEDMatrixBlue_Matrix2();
+[e ( _initLEDMatrixBlue_Matrix2 ..  ]
+"38
+[; ;main.c: 38:             }
 }
 [e :U 2425 ]
-"38
-[; ;main.c: 38:             break;
-[e $U 2421  ]
 "39
-[; ;main.c: 39:         case 2:
-[e :U 2426 ]
-"40
-[; ;main.c: 40:             setLEDToGreen(currentRow, currentCol);
-[e ( _setLEDToGreen (2 , _currentRow _currentCol ]
-"41
-[; ;main.c: 41:             setLEDToGreen_Matrix2(currentRow, currentCol);
-[e ( _setLEDToGreen_Matrix2 (2 , _currentRow _currentCol ]
-"42
-[; ;main.c: 42:             break;
+[; ;main.c: 39:             break;
 [e $U 2421  ]
+"40
+[; ;main.c: 40:         case 2:
+[e :U 2426 ]
+"41
+[; ;main.c: 41:             setLEDToGreen(currentRow, currentCol);
+[e ( _setLEDToGreen (2 , _currentRow _currentCol ]
+"42
+[; ;main.c: 42:             setLEDToGreen_Matrix2(currentRow, currentCol);
+[e ( _setLEDToGreen_Matrix2 (2 , _currentRow _currentCol ]
 "43
-[; ;main.c: 43:     }
+[; ;main.c: 43:             break;
+[e $U 2421  ]
+"44
+[; ;main.c: 44:     }
 }
 [e $U 2421  ]
 [e :U 2422 ]
@@ -2766,262 +2780,295 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 2 `i 2426
  2421 ]
 [e :U 2421 ]
-"46
-[; ;main.c: 46:     if (currentMode != 1) {
+"47
+[; ;main.c: 47:     if (currentMode != 1) {
 [e $ ! != -> _currentMode `i -> 1 `i 2427  ]
 {
-"47
-[; ;main.c: 47:         currentCol++;
-[e ++ _currentCol -> -> 1 `i `Vuc ]
 "48
-[; ;main.c: 48:         if (currentCol >= 5) {
+[; ;main.c: 48:         currentCol++;
+[e ++ _currentCol -> -> 1 `i `Vuc ]
+"49
+[; ;main.c: 49:         if (currentCol >= 5) {
 [e $ ! >= -> _currentCol `i -> 5 `i 2428  ]
 {
-"49
-[; ;main.c: 49:             currentCol = 0;
-[e = _currentCol -> -> 0 `i `uc ]
 "50
-[; ;main.c: 50:             currentRow++;
-[e ++ _currentRow -> -> 1 `i `Vuc ]
+[; ;main.c: 50:             currentCol = 0;
+[e = _currentCol -> -> 0 `i `uc ]
 "51
-[; ;main.c: 51:             if (currentRow >= 5) {
+[; ;main.c: 51:             currentRow++;
+[e ++ _currentRow -> -> 1 `i `Vuc ]
+"52
+[; ;main.c: 52:             if (currentRow >= 5) {
 [e $ ! >= -> _currentRow `i -> 5 `i 2429  ]
 {
-"52
-[; ;main.c: 52:                 currentRow = 0;
-[e = _currentRow -> -> 0 `i `uc ]
 "53
-[; ;main.c: 53:                 currentMode++;
-[e ++ _currentMode -> -> 1 `i `Vuc ]
+[; ;main.c: 53:                 currentRow = 0;
+[e = _currentRow -> -> 0 `i `uc ]
 "54
-[; ;main.c: 54:                 if (currentMode > 2) {
+[; ;main.c: 54:                 currentMode++;
+[e ++ _currentMode -> -> 1 `i `Vuc ]
+"55
+[; ;main.c: 55:                 if (currentMode > 2) {
 [e $ ! > -> _currentMode `i -> 2 `i 2430  ]
 {
-"55
-[; ;main.c: 55:                     currentMode = 0;
+"56
+[; ;main.c: 56:                     currentMode = 0;
 [e = _currentMode -> -> 0 `i `uc ]
-"57
-[; ;main.c: 57:                 }
+"58
+[; ;main.c: 58:                 }
 }
 [e :U 2430 ]
-"58
-[; ;main.c: 58:             }
+"59
+[; ;main.c: 59:             }
 }
 [e :U 2429 ]
-"59
-[; ;main.c: 59:         }
+"60
+[; ;main.c: 60:         }
 }
 [e :U 2428 ]
-"60
-[; ;main.c: 60:     } else {
+"61
+[; ;main.c: 61:     } else {
 }
 [e $U 2431  ]
 [e :U 2427 ]
 {
-"62
-[; ;main.c: 62:         currentMode++;
-[e ++ _currentMode -> -> 1 `i `Vuc ]
 "63
-[; ;main.c: 63:         if (currentMode > 2) {
+[; ;main.c: 63:         currentMode++;
+[e ++ _currentMode -> -> 1 `i `Vuc ]
+"64
+[; ;main.c: 64:         if (currentMode > 2) {
 [e $ ! > -> _currentMode `i -> 2 `i 2432  ]
 {
-"64
-[; ;main.c: 64:             currentMode = 0;
-[e = _currentMode -> -> 0 `i `uc ]
 "65
-[; ;main.c: 65:         }
+[; ;main.c: 65:             currentMode = 0;
+[e = _currentMode -> -> 0 `i `uc ]
+"66
+[; ;main.c: 66:         }
 }
 [e :U 2432 ]
-"66
-[; ;main.c: 66:     }
+"67
+[; ;main.c: 67:     }
 }
 [e :U 2431 ]
-"67
-[; ;main.c: 67: }
+"68
+[; ;main.c: 68: }
 [e :UE 2420 ]
 }
-"71
-[; ;main.c: 71: void nrf_irq(){
+"72
+[; ;main.c: 72: void nrf_irq(){
 [v _nrf_irq `(v ~T0 @X0 1 ef ]
 {
 [e :U _nrf_irq ]
 [f ]
-"72
-[; ;main.c: 72:     nrf_flag=1;
-[e = _nrf_flag -> -> 1 `i `a ]
 "73
-[; ;main.c: 73: }
+[; ;main.c: 73:     nrf_flag=1;
+[e = _nrf_flag -> -> 1 `i `a ]
+"74
+[; ;main.c: 74: }
 [e :UE 2433 ]
 }
-"76
-[; ;main.c: 76: void AdvancedSettings(NRF24_t * dev)
-[v _AdvancedSettings `(v ~T0 @X0 1 ef1`*S2419 ]
-"77
-[; ;main.c: 77: {
+"75
+[; ;main.c: 75: void nrf_refresh_irq(){
+[v _nrf_refresh_irq `(v ~T0 @X0 1 ef ]
 {
-[e :U _AdvancedSettings ]
-"76
-[; ;main.c: 76: void AdvancedSettings(NRF24_t * dev)
-[v _dev `*S2419 ~T0 @X0 1 r1 ]
-"77
-[; ;main.c: 77: {
+[e :U _nrf_refresh_irq ]
 [f ]
-"83
-[; ;main.c: 83:  Nrf24_SetSpeedDataRates(dev, 0);
-[e ( _Nrf24_SetSpeedDataRates (2 , _dev -> -> 0 `i `uc ]
-"89
-[; ;main.c: 89:  Nrf24_setRetransmitDelay(dev, 100);
-[e ( _Nrf24_setRetransmitDelay (2 , _dev -> -> 100 `i `uc ]
-"90
-[; ;main.c: 90: }
+"76
+[; ;main.c: 76:     nrf_refresh=1;
+[e = _nrf_refresh -> -> 1 `i `a ]
+"77
+[; ;main.c: 77: }
 [e :UE 2434 ]
 }
+"80
+[; ;main.c: 80: void AdvancedSettings(NRF24_t * dev)
+[v _AdvancedSettings `(v ~T0 @X0 1 ef1`*S2419 ]
+"81
+[; ;main.c: 81: {
+{
+[e :U _AdvancedSettings ]
+"80
+[; ;main.c: 80: void AdvancedSettings(NRF24_t * dev)
+[v _dev `*S2419 ~T0 @X0 1 r1 ]
+"81
+[; ;main.c: 81: {
+[f ]
+"87
+[; ;main.c: 87:  Nrf24_SetSpeedDataRates(dev, 0);
+[e ( _Nrf24_SetSpeedDataRates (2 , _dev -> -> 0 `i `uc ]
+"93
+[; ;main.c: 93:  Nrf24_setRetransmitDelay(dev, 100);
+[e ( _Nrf24_setRetransmitDelay (2 , _dev -> -> 100 `i `uc ]
 "94
-[; ;main.c: 94: void slave(void *pvParameters) {
+[; ;main.c: 94: }
+[e :UE 2435 ]
+}
+"98
+[; ;main.c: 98: void slave(void *pvParameters) {
 [v _slave `(v ~T0 @X0 1 ef1`*v ]
 {
 [e :U _slave ]
 [v _pvParameters `*v ~T0 @X0 1 r1 ]
 [f ]
-"95
-[; ;main.c: 95:     NRF24_t dev;
+"99
+[; ;main.c: 99:     NRF24_t dev;
 [v _dev `S2419 ~T0 @X0 1 a ]
-"96
-[; ;main.c: 96:     Nrf24_init(&dev);
+"100
+[; ;main.c: 100:     Nrf24_init(&dev);
 [e ( _Nrf24_init (1 &U _dev ]
-"97
-[; ;main.c: 97:     uint8_t payload = 32;
+"101
+[; ;main.c: 101:     uint8_t payload = 32;
 [v _payload `uc ~T0 @X0 1 a ]
 [e = _payload -> -> 32 `i `uc ]
-"98
-[; ;main.c: 98:     uint8_t channel = 112;
+"102
+[; ;main.c: 102:     uint8_t channel = 112;
 [v _channel `uc ~T0 @X0 1 a ]
 [e = _channel -> -> 112 `i `uc ]
-"99
-[; ;main.c: 99:     Nrf24_config(&dev, channel, payload);
-[e ( _Nrf24_config (3 , , &U _dev _channel _payload ]
-"102
-[; ;main.c: 102:     while (Nrf24_setRADDR(&dev, (uint8_t *)"3RECV") != 0);
-[e $U 2436  ]
-[e :U 2437 ]
-[e :U 2436 ]
-[e $ != ( _Nrf24_setRADDR (2 , &U _dev -> :s 1C `*uc -> 0 `i 2437  ]
-[e :U 2438 ]
 "103
-[; ;main.c: 103:     while (Nrf24_setTADDR(&dev, (uint8_t *)"3RECV") != 0);
-[e $U 2439  ]
-[e :U 2440 ]
-[e :U 2439 ]
-[e $ != ( _Nrf24_setTADDR (2 , &U _dev -> :s 2C `*uc -> 0 `i 2440  ]
-[e :U 2441 ]
+[; ;main.c: 103:     Nrf24_config(&dev, channel, payload);
+[e ( _Nrf24_config (3 , , &U _dev _channel _payload ]
 "106
-[; ;main.c: 106:     AdvancedSettings(&dev);
-[e ( _AdvancedSettings (1 &U _dev ]
-"109
-[; ;main.c: 109:     Nrf24_configRegister(0x07, (1 << 6) | (1 << 5) | (1 << 4));
-[e ( _Nrf24_configRegister (2 , -> -> 7 `i `uc -> | | << -> 1 `i -> 6 `i << -> 1 `i -> 5 `i << -> 1 `i -> 4 `i `uc ]
+[; ;main.c: 106:     while (Nrf24_setRADDR(&dev, (uint8_t *)"3RECV") != 0);
+[e $U 2437  ]
+[e :U 2438 ]
+[e :U 2437 ]
+[e $ != ( _Nrf24_setRADDR (2 , &U _dev -> :s 1C `*uc -> 0 `i 2438  ]
+[e :U 2439 ]
+"107
+[; ;main.c: 107:     while (Nrf24_setTADDR(&dev, (uint8_t *)"3RECV") != 0);
+[e $U 2440  ]
+[e :U 2441 ]
+[e :U 2440 ]
+[e $ != ( _Nrf24_setTADDR (2 , &U _dev -> :s 2C `*uc -> 0 `i 2441  ]
+[e :U 2442 ]
 "110
-[; ;main.c: 110:     TMR1_Stop();
-[e ( _TMR1_Stop ..  ]
-"111
-[; ;main.c: 111:     TMR2_Stop();
-[e ( _TMR2_Stop ..  ]
-"112
-[; ;main.c: 112:     TMR0_Stop();
-[e ( _TMR0_Stop ..  ]
+[; ;main.c: 110:     AdvancedSettings(&dev);
+[e ( _AdvancedSettings (1 &U _dev ]
 "113
-[; ;main.c: 113:     TMR4_Start();
-[e ( _TMR4_Start ..  ]
+[; ;main.c: 113:     Nrf24_configRegister(0x07, (1 << 6) | (1 << 5) | (1 << 4));
+[e ( _Nrf24_configRegister (2 , -> -> 7 `i `uc -> | | << -> 1 `i -> 6 `i << -> 1 `i -> 5 `i << -> 1 `i -> 4 `i `uc ]
 "114
-[; ;main.c: 114:     nRF24_IRQ_SetInterruptHandler(nrf_irq);
-[e ( _nRF24_IRQ_SetInterruptHandler (1 -> &U _nrf_irq `*F18133 ]
+[; ;main.c: 114:     TMR1_Stop();
+[e ( _TMR1_Stop ..  ]
+"115
+[; ;main.c: 115:     TMR2_Stop();
+[e ( _TMR2_Stop ..  ]
 "116
-[; ;main.c: 116:     (INTCON0bits.GIE = 1);
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+[; ;main.c: 116:     TMR0_Start();
+[e ( _TMR0_Start ..  ]
 "117
-[; ;main.c: 117:     while (1) {
-[e :U 2443 ]
+[; ;main.c: 117:     TMR4_Start();
+[e ( _TMR4_Start ..  ]
+"118
+[; ;main.c: 118:     nRF24_IRQ_SetInterruptHandler(nrf_irq);
+[e ( _nRF24_IRQ_SetInterruptHandler (1 -> &U _nrf_irq `*F18135 ]
+"119
+[; ;main.c: 119:     TMR0_OverflowCallbackRegister(nrf_refresh_irq);
+[e ( _TMR0_OverflowCallbackRegister (1 -> &U _nrf_refresh_irq `*F18137 ]
+"120
+[; ;main.c: 120:     (INTCON0bits.GIE = 1);
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+"121
+[; ;main.c: 121:     while (1) {
+[e :U 2444 ]
 {
-"130
-[; ;main.c: 130:         if(nrf_flag){
-[e $ ! != -> _nrf_flag `i -> 0 `i 2445  ]
+"134
+[; ;main.c: 134:         if(nrf_flag){
+[e $ ! != -> _nrf_flag `i -> 0 `i 2446  ]
 {
-"131
-[; ;main.c: 131:   if (Nrf24_dataReady(&dev)) {
-[e $ ! != -> ( _Nrf24_dataReady (1 &U _dev `i -> 0 `i 2446  ]
+"135
+[; ;main.c: 135:   if (Nrf24_dataReady(&dev)) {
+[e $ ! != -> ( _Nrf24_dataReady (1 &U _dev `i -> 0 `i 2447  ]
 {
-[v F18135 `uc ~T0 @X0 -> 32 `i s ]
-[i F18135
+[v F18139 `uc ~T0 @X0 -> 32 `i s ]
+[i F18139
 :U ..
-"132
-[; ;main.c: 132:             uint8_t buf[32] = {0};
+"136
+[; ;main.c: 136:                 uint8_t buf[32] = {0};
 -> -> 0 `i `uc
 ..
 ]
 [v _buf `uc ~T0 @X0 -> 32 `i a ]
-[e = _buf F18135 ]
-"133
-[; ;main.c: 133:    Nrf24_getData(&dev, buf);
-[e ( _Nrf24_getData (2 , &U _dev &U _buf ]
-"134
-[; ;main.c: 134:             if (strncmp((char*)buf, "LED", 8) == 0) {
-[e $ ! == ( _strncmp (3 , , -> -> &U _buf `*uc `*Cuc :s 3C -> -> 8 `i `ui -> 0 `i 2447  ]
-{
+[e = _buf F18139 ]
 "137
-[; ;main.c: 137:             updateLedMatrices(&buf[8]);
-[e ( _updateLedMatrices (1 &U *U + &U _buf * -> -> -> 8 `i `ui `ux -> -> # *U &U _buf `ui `ux ]
+[; ;main.c: 137:                 Nrf24_getData(&dev, buf);
+[e ( _Nrf24_getData (2 , &U _dev &U _buf ]
 "138
-[; ;main.c: 138:             }
+[; ;main.c: 138:                 if (strncmp((char*)buf, "LED", 8) == 0) {
+[e $ ! == ( _strncmp (3 , , -> -> &U _buf `*uc `*Cuc :s 3C -> -> 8 `i `ui -> 0 `i 2448  ]
+{
+"141
+[; ;main.c: 141:                 updateLedMatrices(&buf[8]);
+[e ( _updateLedMatrices (1 &U *U + &U _buf * -> -> -> 8 `i `ui `ux -> -> # *U &U _buf `ui `ux ]
+"142
+[; ;main.c: 142:                 }
+}
+[e :U 2448 ]
+"143
+[; ;main.c: 143:             }
 }
 [e :U 2447 ]
-"139
-[; ;main.c: 139:   }
+"144
+[; ;main.c: 144:             nrf_flag=0;
+[e = _nrf_flag -> -> 0 `i `a ]
+"145
+[; ;main.c: 145:         }
 }
 [e :U 2446 ]
-"140
-[; ;main.c: 140:         nrf_flag=0;
-[e = _nrf_flag -> -> 0 `i `a ]
-"141
-[; ;main.c: 141:         }
+"146
+[; ;main.c: 146:         if(nrf_refresh){
+[e $ ! != -> _nrf_refresh `i -> 0 `i 2449  ]
+{
+"147
+[; ;main.c: 147:             Nrf24_flushRx(&dev);
+[e ( _Nrf24_flushRx (1 &U _dev ]
+"148
+[; ;main.c: 148:             Nrf24_configRegister(0x07, (1 << 6) | (1 << 5) | (1 << 4));
+[e ( _Nrf24_configRegister (2 , -> -> 7 `i `uc -> | | << -> 1 `i -> 6 `i << -> 1 `i -> 5 `i << -> 1 `i -> 4 `i `uc ]
+"149
+[; ;main.c: 149:             nrf_refresh=0;
+[e = _nrf_refresh -> -> 0 `i `a ]
+"150
+[; ;main.c: 150:         }
 }
+[e :U 2449 ]
+"151
+[; ;main.c: 151:         DELAY_milliseconds(1);
+[e ( _DELAY_milliseconds (1 -> -> 1 `i `us ]
+"152
+[; ;main.c: 152:     }
+}
+[e :U 2443 ]
+[e $U 2444  ]
 [e :U 2445 ]
-"143
-[; ;main.c: 143:         DELAY_milliseconds(10);
-[e ( _DELAY_milliseconds (1 -> -> 10 `i `us ]
-"144
-[; ;main.c: 144:     }
-}
-[e :U 2442 ]
-[e $U 2443  ]
-[e :U 2444 ]
-"145
-[; ;main.c: 145: }
-[e :UE 2435 ]
+"153
+[; ;main.c: 153: }
+[e :UE 2436 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"238
-[; ;main.c: 238: void main(void)
+"246
+[; ;main.c: 246: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"239
-[; ;main.c: 239: {
+"247
+[; ;main.c: 247: {
 {
 [e :U _main ]
 [f ]
-"240
-[; ;main.c: 240:     SYSTEM_Initialize();
+"248
+[; ;main.c: 248:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"242
-[; ;main.c: 242:     TMR2_OverflowCallbackRegister(LEDMatrix_TimerISR);
+"250
+[; ;main.c: 250:     TMR2_OverflowCallbackRegister(LEDMatrix_TimerISR);
 [e ( _TMR2_OverflowCallbackRegister (1 &U _LEDMatrix_TimerISR ]
-"243
-[; ;main.c: 243:     TMR4_OverflowCallbackRegister(LEDMatrix_RowController_TimerISR);
+"251
+[; ;main.c: 251:     TMR4_OverflowCallbackRegister(LEDMatrix_RowController_TimerISR);
 [e ( _TMR4_OverflowCallbackRegister (1 &U _LEDMatrix_RowController_TimerISR ]
-"249
-[; ;main.c: 249:     slave(((void*)0));
+"257
+[; ;main.c: 257:     slave(((void*)0));
 [e ( _slave (1 -> -> 0 `i `*v ]
-"260
-[; ;main.c: 260: }
-[e :UE 2448 ]
+"268
+[; ;main.c: 268: }
+[e :UE 2450 ]
 }
 [a 1C 51 82 69 67 86 0 ]
 [a 2C 51 82 69 67 86 0 ]
